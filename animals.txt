@@ -1,0 +1,24 @@
+{
+  name: lion
+  attack: 10
+  health: 100
+  aggression: 0.5
+}
+{
+  name: tiger
+  attack: 15
+  health: 80
+  aggression: 0.5
+}
+{
+  name: cuttlefish
+  attack: 15
+  health: 40
+  aggression: 0.2
+}
+{
+  name: testwinner
+  attack: 999
+  health: 999
+  aggression: 1.0
+}

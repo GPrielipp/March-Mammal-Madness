@@ -1,0 +1,37 @@
+Author: George Prielipp
+Date Completed: Sunday, March 8, 2020, 7:48 PM AST
+Total Lines: 363
+
+Program Description:
+  The program does a mock March Mammal Madness 
+  bracket to find the winner based off of health, 
+  aggression (percent as decimal), and attack 
+  (integer of damage done with one hit).
+  
+  Each animal is stored in the "animals.txt" file as:
+ 
+  {
+    name: String
+    attack: Integer
+    health: Integer
+    aggression: Double
+  }
+
+  The file is parsed one line at a time; that means that the contents of the curly
+  braces may be swapped around in any order. More items may be added as long
+  as they are fully implemented in the Animal class and FileParser.GetAnimals() method.
+
+  In order to operate the program you will need to read
+  the animals from the file into an ArrayList<Animal>. This is 
+  accomplished using the FileParser class and FileParser.GetAnimals() method.
+
+  Each one of the blocks in the text file is stored in an 
+  Animal class which has a name, attack damage, health, and aggression.
+
+  The Arena class handles the fighting. It goes about this
+  by adding in randomness based off a chance (the animal's aggression) to 
+  determine if the animal should attack. It does a fixed iteration count to determine 
+  who the winner is in the most situations. Then it adds it to a winners list which will be sorted
+  at the end of the function to find the animal that wins the most. Then it halves the winners list,
+  and repeats the function again until there is one animal left.
+  It then returns the last animal standing.
